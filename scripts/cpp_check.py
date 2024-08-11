@@ -11,7 +11,7 @@ def compile_and_run(code):
     with open("./a.cpp", "w") as f:
         f.write(code)
 
-    compile_command = ['g++', "./a.cpp", '-o', './a.out', "-std=c++11", "-lm", "-lcrypto"]
+    compile_command = ['g++', "./a.cpp", '-o', './a.out', "-std=c++11", "-lcrypto", "-lssl"]
     compile_process = subprocess.run(compile_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     if compile_process.returncode == 0:

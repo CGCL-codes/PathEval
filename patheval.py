@@ -80,6 +80,7 @@ def test():
     data = read_problems()
     d = data[0]
     assert not evaluate_one(d, "vector<float>({1.1,2.2,3.3}), 2.0")['pass']
+    assert evaluate_one(d, "vector<float>{1.5, 2.5, 3.5, 4.5, 5.5}, 0.5")['pass']
 
     catch = False
     try:

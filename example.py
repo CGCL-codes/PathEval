@@ -3,7 +3,7 @@ from pprint import pprint
 
 def ask(prompt):
     # hook, this completion is from gpt-3.5-turbo
-    return "vector<float>{1.5, 2.5, 3.5, 4.5, 5.5}, 1.0"
+    return "vector<float>{1.5, 2.5, 3.5, 4.5, 5.5}, 0.5"
 
 def your_model_or_approach_here(d):
     # query with custom prompt
@@ -17,5 +17,6 @@ def your_model_or_approach_here(d):
 set_dataset("patheval_cpp") # or "patheval_java" or "patheval_py" or "logic_bombs_c"
 problems = read_problems()
 problem = problems[0]
+print(problem['focal_method'] + problem['target'])
 print(evaluate_one(problem, your_model_or_approach_here(problem))['pass'])
 

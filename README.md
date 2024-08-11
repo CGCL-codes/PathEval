@@ -5,17 +5,25 @@ This is an evaluation set for the directed/targeted input solving problem. We us
 ## Installation
 
 ### Linux (Debain)
-
-Install gcc, g++ python3 and openjdk by the following commands.
+Install gcc, g++, python3 and openjdk by the following commands.
 ```shell
 apt update
-apt install -y -q build-essential gcc g++ python3 python3-pip openjdk-11-jdk-headlessl
+apt install -y -q build-essential gcc g++ python3 python3-pip openjdk-11-jdk-headlessl libssl-dev
 python3 -m pip install tqdm
+
+git clone https://github.com/CGCL-codes/PathEval.git
+cd PathEval
 ```
 
 ### Docker
 ```shell
+git clone https://github.com/CGCL-codes/PathEval.git
+cd PathEval
+
 docker build -t patheval .
+docker run -it --rm patheval /bin/bash
+
+# cd /work in container
 ```
 
 ## Usage

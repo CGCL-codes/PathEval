@@ -33,7 +33,7 @@ cpp_testvars = {
     "long": "1000000",
     "int64_t": "1000000",
     "string": "\"hello\"",
-    "bool": "True",
+    "bool": "true",
     "char": "'a'",
     "vector<int>": "{ 1, 2, 3 }",
     "vector<double>": "{ 1.0, 2.0, 3.0 }",
