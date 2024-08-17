@@ -39,9 +39,9 @@ def compile_and_run(focal_method, main):
     return rv, output, error
 
 def check_one(d, filling):
-            focal_method = d['focal_method']
-            main = d['target']
-            new_main = main.replace("<FILL_ME>", filling)
-            prefix = "import java.util.*;\nimport java.lang.*;\n"
-            new_main = prefix + new_main
-            return compile_and_run(focal_method, new_main)
+    focal_method = d['focal_method']
+    main = d['target']
+    new_main = main.replace("<FILL_ME>", filling)
+    prefix = "import java.util.*;\nimport java.lang.*;\n"
+    new_main = prefix + new_main
+    return compile_and_run(focal_method, new_main)

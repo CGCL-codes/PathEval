@@ -1,6 +1,7 @@
 from utils import load_data, dump_data
 from pprint import pprint
 import tqdm
+import argparse
 
 dataset = None
 
@@ -55,16 +56,19 @@ def evaluate_one(d:dict, completion:str) -> True:
         return d
 
 def evaluate_all(problems, completions):
+    for idx, problem in enumerate(problems):
+        problems[idx]['pass'] = False
     for completion in tqdm.tqdm(completions):
         idx = completion['index']
         comp = completion['completion']
         d = evaluate_one(problems[idx], comp)
         if d['pass']:
              problems[idx]['pass'] = True
-    pass_samples = len(filter(lambda x : x['pass'], problems))
+    pass_samples = list(filter(lambda x : x['pass'], problems))
     pass_rate = len(pass_samples) / len(problems)
     print(f"Pass Rate : {pass_rate} ({len(pass_samples)} / {len(problems)})")
-        
+
+
 def test():
     set_dataset("patheval_py")
     data = read_problems()
@@ -90,5 +94,25 @@ def test():
     assert catch
 
 
+def main():
+    parser = argparse.ArgumentParser(description='Process some command line arguments.')
+    # Add arguments
+    parser.add_argument('--dataset', type=str, required=True,
+                        help='the selected dataset')
+    parser.add_argument('-i', '--input', type=str, required=True,
+                        help='the json file of index and completion from LLMs for each problem.')
+    # Parse arguments
+    args = parser.parse_args()
+
+    set_dataset(args.dataset)
+    problems = read_problems()
+    try:
+        completions = load_data(args.input)
+    except Exception as e:
+         print(e)
+         exit(-1)
+    evaluate_all(problems, completions)
+
 if __name__ == "__main__":
-     test()
+    # test()
+    main()
