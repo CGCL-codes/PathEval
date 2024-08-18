@@ -5,7 +5,8 @@ The goal of directed test input (a.k.a. targeted test input) generation is to au
 
 For example:
 ```c
-// ask LLMs to find out a input of `s` that can reach the target line:
+// EXAMPLE 1:
+// generate an input of `s` that can reach the target line:
 int arr(char *s){
     int symvar = s[0] - 48;
     int ary[] ={1,2,3,4,5};
@@ -14,7 +15,8 @@ int arr(char *s){
     }
 }
 
-// or get a expected output
+// EXAMPLE 2:
+// or produce the expected output
 int execute(char* s) {
     int ret = system(s);
     if(ret == 0){
@@ -27,11 +29,14 @@ int execute(char* s) {
 Targeted input generation plays a crucial role in various software engineering and security tasks, including fuzzing, bug reproduction (where the target is the bug location), and test suite augmentation (where the target is the specific code to be covered). It has also been extensively integrated with conventional testing tools to enhance coverage and overall performance.
 
 Constraint-based techniques, such as symbolic execution
-and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning. We use PathEval to benchmark the ability of LLMs to solve the problem of directed test input generation. 
+and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning. 
+We use PathEval to benchmark and evaluate the ability of LLMs to solve the problem of directed test input generation. 
 
 
-We find that LLMs and constraint-based tools have distinct advantages and disadvantages. 
-LLMs can more effectively address challenges that involve implicit data flow (e.g., interactive with operation system) and out-of-code constraints (e.g., a valid Linux command). However, their performance is less satisfactory when requiring precise solutions (e.g., sequential computation).
+LLMs and constraint-based tools have distinct advantages and disadvantages towards this problem.
+For instance, it is easy for constrint-based tools to generate the target input for the above EXAMPLE 1 while being challenging for LLMs.
+Interestingly, it is the opposite for EXAMPLE 2.
+
 ## Installation
 
 ### Linux (Debian)
