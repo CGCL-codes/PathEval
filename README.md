@@ -1,14 +1,13 @@
-# PathEval: Directed Input Generation Evaluation Set For LLM
+# PathEval: Evaluation Set for Directed Test Input Generation
 
-This is an evaluation set for the directed/targeted input solving problem.
-The goal of directed test input (a.k.a. targeted test input) generation is to automatically generate test inputs with a given target. 
+This is an evaluation set for the problem of **directed/targeted test input generation**, especially targeting Large Language Models (LLMs).
+The goal of directed test input (a.k.a. targeted test input) generation is to automatically generate test inputs to reach a certain code location or produce a particular result. 
 
-Targeted inputs are widely used in software engineering
-tasks such as bug reproducation (target is the bug location),
-test suite argument (target is the code to cover) and combing
-with other testing tools to get better overall performance.
+Targeted input generation plays a crucial role in various software engineering and security tasks, including fuzzing, bug reproduction (where the target is the bug location), and test suite augmentation (where the target is the specific code to be covered). It has also been extensively integrated with conventional testing tools to enhance coverage and overall performance.
 
-We use it to benchmark the ability of large language models for generation input to reach a certain code location or particular result.
+Constraint-based techniques, such as symbolic execution
+and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning.  
+We use PathEval to benchmark the ability of LLMs for the problem of directed test input generation. 
 
 ## Installation
 
