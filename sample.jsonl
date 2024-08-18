@@ -1,0 +1,100 @@
+{"index": 572, "completion": "Arrays.asList(1.0, 2., 3.)"}
+{"index": 486, "completion": "\"Mary had a little lamb\", 4"}
+{"index": 532, "completion": "\"Hello,Hello,world !\" "}
+{"index": 599, "completion": "\"1\", 1"}
+{"index": 514, "completion": "Arrays.asList(30, 13, 24, 321)"}
+{"index": 378, "completion": "0, 1"}
+{"index": 547, "completion": "Arrays.asList(Arrays.asList(8, 14, 9, 2), Arrays.asList(6, 4, 13, 15), Arrays.asList(5, 7, 1, 12), Arrays.asList(3, 10, 11, 16)), 5"}
+{"index": 450, "completion": "\"r t g\" "}
+{"index": 305, "completion": "\"MadaM\""}
+{"index": 711, "completion": "new ArrayList<>(Arrays.asList(\"aaaaaaa\", \"bb\", \"cc\"))"}
+{"index": 438, "completion": "Arrays.asList(1, 100, 98, -7, 1, -1)"}
+{"index": 447, "completion": "\"r t g\" "}
+{"index": 456, "completion": "\"abcdedcba\", \"ab\" "}
+{"index": 513, "completion": "Arrays.asList(5, 9)"}
+{"index": 669, "completion": "List.of()"}
+{"index": 605, "completion": "7"}
+{"index": 578, "completion": "List.of(0.)"}
+{"index": 465, "completion": "List.of(7)"}
+{"index": 522, "completion": "12"}
+{"index": 40, "completion": "new ArrayList<>(Arrays.asList(\"x\", \"y\", \"z\"))"}
+{"index": 546, "completion": "Arrays.asList(Arrays.asList(1, 2, 3, 4), Arrays.asList(5, 6, 7, 8), Arrays.asList(9, 10, 11, 12), Arrays.asList(13, 14, 15, 16)), 4"}
+{"index": 446, "completion": "\"a b c a b\" "}
+{"index": 588, "completion": "Arrays.asList(4, 5, 3, 6, 2, 7, -7)"}
+{"index": 611, "completion": "\"   Exa 1 2 2 mple\" "}
+{"index": 335, "completion": "new ArrayList<>(Arrays.asList(15, 42, 87, 32 ,11, 0))"}
+{"index": 548, "completion": "Arrays.asList(Arrays.asList(2, 7, 4), Arrays.asList(3, 1, 5), Arrays.asList(6, 8, 9)), 8"}
+{"index": 101, "completion": "new ArrayList<>(Arrays.asList(\"x\", \"y\", \"z\", \"w\", \"k\"))"}
+{"index": 269, "completion": "new ArrayList<>(List.of(3)), 5"}
+{"index": 592, "completion": "Arrays.asList(1, 3, 2, 4, 5, 6, -2)"}
+{"index": 588, "completion": "Arrays.asList(-6, -4, -4, -3, -100, 1)"}
+{"index": 222, "completion": "\"abcde\""}
+{"index": 387, "completion": "\"-15.5\""}
+{"index": 691, "completion": "0"}
+{"index": 89, "completion": "3 * 19 * 19 * 19"}
+{"index": 384, "completion": "\"abcdefg\""}
+{"index": 581, "completion": "List.of(-1.)"}
+{"index": 100, "completion": "new ArrayList<>(List.of())"}
+{"index": 697, "completion": "426"}
+{"index": 207, "completion": "\"(()\""}
+{"index": 462, "completion": "Arrays.asList(\"3\", \"11111111\" )"}
+{"index": 470, "completion": "Arrays.asList(100, -1, -2, -3, 10, -5)"}
+{"index": 540, "completion": "Arrays.asList(2, 4,1, 2, -1, -1, 9)"}
+{"index": 598, "completion": "\"5,1\", \"6\""}
+{"index": 725, "completion": "1, 10, 10"}
+{"index": 570, "completion": "\"[[[[]]]]\" "}
+{"index": 422, "completion": "new ArrayList<>(Arrays.asList(9, 4, 8))"}
+{"index": 505, "completion": "new ArrayList<>(Arrays.asList(4, -4)), 2"}
+{"index": 503, "completion": "new ArrayList<>(Arrays.asList(4, -4)), 2"}
+{"index": 315, "completion": "147"}
+{"index": 508, "completion": "new ArrayList<>(Arrays.asList(1, 0, 5, -7)), 1"}
+{"index": 238, "completion": "\"5 apples and 6 oranges\",19"}
+{"index": 700, "completion": "532"}
+{"index": 724, "completion": "4, 5, 7"}
+{"index": 159, "completion": "12"}
+{"index": 693, "completion": "-45347"}
+{"index": 561, "completion": "6"}
+{"index": 445, "completion": "Arrays.asList(100, 200), Arrays.asList(200, 200)"}
+{"index": 492, "completion": "\"eAsy\""}
+{"index": 276, "completion": "new ArrayList<>(Arrays.asList(\"hi\", \"admin\")), new ArrayList<>(Arrays.asList(\"hi\", \"hi\"))"}
+{"index": 696, "completion": "43"}
+{"index": 249, "completion": "new ArrayList<>(Arrays.asList(2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1))"}
+{"index": 133, "completion": "7"}
+{"index": 414, "completion": "197, 233"}
+{"index": 457, "completion": "\"mamma\", \"mia\" "}
+{"index": 631, "completion": "\"1/6\", \"2/1\""}
+{"index": 374, "completion": "18"}
+{"index": 427, "completion": "7"}
+{"index": 502, "completion": "new ArrayList<>(Arrays.asList(-123, 20, 0 , 1, 2, -3)), 4"}
+{"index": 699, "completion": "994"}
+{"index": 582, "completion": "\"eeeee\" "}
+{"index": 265, "completion": "2, 2, 10"}
+{"index": 597, "completion": "\"1\", 1"}
+{"index": 573, "completion": "Arrays.asList(1., 3., 5., 7.)"}
+{"index": 621, "completion": "Arrays.asList(-56,-99,1,0,-2)"}
+{"index": 590, "completion": "Arrays.asList(-1, -3, -5, -6, 0)"}
+{"index": 302, "completion": "new ArrayList<>(List.of(1.2))"}
+{"index": 650, "completion": "\"Earth\", \"Earth\""}
+{"index": 638, "completion": "new ArrayList<>(Arrays.asList(1234, 423, 463, 145, 2, 423, 423, 53, 6, 37, 3457, 3, 56, 0, 46))"}
+{"index": 132, "completion": "7"}
+{"index": 562, "completion": "5"}
+{"index": 249, "completion": "new ArrayList<>(Arrays.asList(8, 8, 8, 8, 8, 8, 8, 8))"}
+{"index": 590, "completion": "List.of(0)"}
+{"index": 686, "completion": "\"efef\", \"fee\""}
+{"index": 88, "completion": "3 * 19 * 3 * 19"}
+{"index": 411, "completion": "5, 5"}
+{"index": 503, "completion": "new ArrayList<>(Arrays.asList(-1, 0, 2, 5, 3, -10)), 2"}
+{"index": 558, "completion": "4"}
+{"index": 439, "completion": "Arrays.asList(12, 23, 34, -45, -56, 0)"}
+{"index": 272, "completion": "new ArrayList<>(Arrays.asList(1, 2, 3, 5, 4, 7, 9, 6))"}
+{"index": 201, "completion": "27"}
+{"index": 374, "completion": "10"}
+{"index": 723, "completion": "4, 8, 9"}
+{"index": 70, "completion": "new ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0, 2.0))"}
+{"index": 291, "completion": "\"112233445566778899AABBCCDDEEFF00\""}
+{"index": 201, "completion": "15"}
+{"index": 733, "completion": "\"#a@C\""}
+{"index": 411, "completion": "7, 13"}
+{"index": 126, "completion": "1"}
+{"index": 504, "completion": "new ArrayList<>(Arrays.asList(1, 0, 5, -7)), 1"}
+{"index": 384, "completion": "\"EEEE\""}
