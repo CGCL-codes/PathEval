@@ -3,11 +3,35 @@
 This is an evaluation set for the problem of **directed/targeted test input generation**, especially targeting Large Language Models (LLMs).
 The goal of directed test input (a.k.a. targeted test input) generation is to automatically generate test inputs to reach a certain code location or produce a particular result. 
 
+For example:
+```c
+// ask LLMs to find out a input of `s` that can reach the target line:
+int arr(char *s){
+    int symvar = s[0] - 48;
+    int ary[] ={1,2,3,4,5};
+    if (ary[symvar%5] == 5){
+        // target line
+    }
+}
+
+// or get a expected output
+int execute(char* s) {
+    int ret = system(s);
+    if(ret == 0){
+        return OK; // expected
+    }
+    return ERR;
+}
+```
+
 Targeted input generation plays a crucial role in various software engineering and security tasks, including fuzzing, bug reproduction (where the target is the bug location), and test suite augmentation (where the target is the specific code to be covered). It has also been extensively integrated with conventional testing tools to enhance coverage and overall performance.
 
 Constraint-based techniques, such as symbolic execution
 and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning. We use PathEval to benchmark the ability of LLMs to solve the problem of directed test input generation. 
 
+
+We find that LLMs and constraint-based tools have distinct advantages and disadvantages. 
+LLMs can more effectively address challenges that involve implicit data flow (e.g., interactive with operation system) and out-of-code constraints (e.g., a valid Linux command). However, their performance is less satisfactory when requiring precise solutions (e.g., sequential computation).
 ## Installation
 
 ### Linux (Debian)
@@ -119,14 +143,14 @@ An example C++ sample is shown as follow.
 ```
 We use `<FILL_ME>` to mark the position for LLMs to fill in.
 
-## DataSet Extension
+## Dataset Extension
 We are trying to extend the dataset from real-world open-source projects, a sample is shown under `data/rw`. These samples will be added to this repo once finished.
 
 ## Known Issues
 There is a very small difference in the number of samples in the dataset for the three programming languages due to the fact that this dataset was converted from [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x) using our automated methodology, where a very small number of samples failed in this process and were discarded.
 
 ## Citation
-This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024, to appear). The preview version will be uploaded soon.
+This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024, to appear). The preview version is [here](./preview.pdf).
 
 ```text
 @inproceedings{jiang2024towards,
