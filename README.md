@@ -35,7 +35,6 @@ docker run -it --rm patheval /bin/bash
 ## Usage
 **The evaluation will compile and execute untrusted model-generated data and code (see scripts/*_check.py). It is strongly encouraged to run this project in a sandbox (e.g., docker container).**
 
-
 Users can simply use this dataset through a couple of APIs.
 
 **Example**
@@ -49,6 +48,11 @@ problems = read_problems()
 
 # completion = query(...)
 evaluate_one(problems[0], completion)['pass'] # True / False
+```
+
+Or you can validate offline with the script `patheval.py`:
+```shell
+python3 patheval.py --dataset patheval_java --input sample.jsonl
 ```
 
 **APIs**
@@ -111,3 +115,13 @@ There is a very small difference in the number of samples in the dataset for the
 
 ## Citation
 This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024, to appear). The preview version will be uploaded soon.
+
+```text
+@inproceedings{jiang2024towards,
+  title={Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation},
+  author={Zongze, Jiang and Ming, Wen and Jialun, Cao and Xuanhua, Shi and Hai, Jin },
+  booktitle={39th {IEEE/ACM} International Conference on Automated Software Engineering,
+                  {ASE} 2024, California, United States, October 27 - November 1, 2024},
+  year={2024}
+}
+```
