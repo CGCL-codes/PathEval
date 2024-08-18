@@ -54,6 +54,15 @@ Or you can validate offline with the script `patheval.py`:
 ```shell
 python3 patheval.py --dataset patheval_java --input sample.jsonl
 ```
+For the optional dataset see the documentation for `set_dataset` below.
+The format of `sample.jsonl` is as follows, the order doesn't matter.
+```jsonl
+{"index": 486, "completion": "\"Mary had a little lamb\", 4"}
+{"index": 532, "completion": "\"Hello,Hello,world !\" "}
+{"index": 572, "completion": "Arrays.asList(1.0, 2., 3.)"}
+...
+```
+We expect that each question can have **one or more rows of answers (multiple rows of data with the same index)**. If a question does not have a corresponding answer, then it fails by default.
 
 **APIs**
 
