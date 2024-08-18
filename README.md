@@ -6,8 +6,7 @@ The goal of directed test input (a.k.a. targeted test input) generation is to au
 Targeted input generation plays a crucial role in various software engineering and security tasks, including fuzzing, bug reproduction (where the target is the bug location), and test suite augmentation (where the target is the specific code to be covered). It has also been extensively integrated with conventional testing tools to enhance coverage and overall performance.
 
 Constraint-based techniques, such as symbolic execution
-and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning.  
-We use PathEval to benchmark the ability of LLMs for the problem of directed test input generation. 
+and concolic testing, have been well-explored in this problem while Large Language Models (LLMs) have demonstrated exceptionally good performance in code understanding and reasoning. We use PathEval to benchmark the ability of LLMs for the problem of directed test input generation. 
 
 ## Installation
 
