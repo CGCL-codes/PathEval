@@ -127,7 +127,7 @@ For each sample, the following information is provided:
 
 *In logic_bombs samples, humaneval_task_id is replaced by logic_bombs_task_id.*
 
-The samples are placed under the `data` folder in `.jsonl` files, the samples in the three different files are semantically the same, but belong to different programming languages. 
+The samples are placed under the `data` folder in `.jsonl` files, the samples in the three different files are semantically equivalent, but are implemented in different programming languages. 
 
 An example C++ sample is shown as follow.
 ```json
@@ -143,14 +143,14 @@ An example C++ sample is shown as follow.
 ```
 We use `<FILL_ME>` to mark the position for LLMs to fill in.
 
-## Dataset Extension
-We are trying to extend the dataset from real-world open-source projects, a sample is shown under `data/rw`. These samples will be added to this repo once finished.
+## DataSet Extension
+We are extending the dataset from real-world open-source projects, a sample is shown under `data/rw`. These samples will be added to this repo soon.
 
 ## Known Issues
-There is a very small difference in the number of samples in the dataset for the three programming languages due to the fact that this dataset was converted from [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x) using our automated methodology, where a very small number of samples failed in this process and were discarded.
+There exists subtle difference in the number of samples in the dataset for the three programming languages due to the fact that this dataset was converted from [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x) in a automated manner, where a very small number of samples failed in the automated process and were thus discarded.
 
 ## Citation
-This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024, to appear). The preview version is [here](./preview.pdf).
+This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024). The preview version will be uploaded soon.
 
 ```text
 @inproceedings{jiang2024towards,
