@@ -155,7 +155,7 @@ We are extending the dataset from real-world open-source projects, a sample is s
 There exists subtle difference in the number of samples in the dataset for the three programming languages due to the fact that this dataset was converted from [HumanEval-X](https://huggingface.co/datasets/THUDM/humaneval-x) in a automated manner, where a very small number of samples failed in the automated process and were thus discarded.
 
 ## Citation
-This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024). The preview version is [here](./preview.pdf).
+This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024). The preview version is [here](./PathEval_Preprint.pdf).
 
 ```text
 @inproceedings{jiang2024towards,
