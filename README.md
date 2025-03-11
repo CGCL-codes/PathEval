@@ -158,11 +158,27 @@ There exists subtle difference in the number of samples in the dataset for the t
 This is originally created for our paper "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation" (ASE 2024). The preview version is [here](./PathEval_Preprint.pdf).
 
 ```text
-@inproceedings{jiang2024towards,
-  title={Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation},
-  author={Zongze, Jiang and Ming, Wen and Jialun, Cao and Xuanhua, Shi and Hai, Jin },
-  booktitle={39th {IEEE/ACM} International Conference on Automated Software Engineering,
-                  {ASE} 2024, California, United States, October 27 - November 1, 2024},
-  year={2024}
+@inproceedings{DBLP:conf/kbse/Jiang0CS024,
+  author       = {Zongze Jiang and
+                  Ming Wen and
+                  Jialun Cao and
+                  Xuanhua Shi and
+                  Hai Jin},
+  editor       = {Vladimir Filkov and
+                  Baishakhi Ray and
+                  Minghui Zhou},
+  title        = {Towards Understanding the Effectiveness of Large Language Models on
+                  Directed Test Input Generation},
+  booktitle    = {Proceedings of the 39th {IEEE/ACM} International Conference on Automated
+                  Software Engineering, {ASE} 2024, Sacramento, CA, USA, October 27
+                  - November 1, 2024},
+  pages        = {1408--1420},
+  publisher    = {{ACM}},
+  year         = {2024},
+  url          = {https://doi.org/10.1145/3691620.3695513},
+  doi          = {10.1145/3691620.3695513},
+  timestamp    = {Mon, 03 Mar 2025 21:16:48 +0100},
+  biburl       = {https://dblp.org/rec/conf/kbse/Jiang0CS024.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
